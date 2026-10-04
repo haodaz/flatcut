@@ -1,0 +1,19 @@
+{
+  "name": "flatcut",
+  "version": "0.1.0",
+  "description": "Cut the paper-white background out of an AI-generated flat illustration, without eating the light areas inside the subject.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {"flatcut": "src/cli.js"},
+  "exports": {".": "./src/index.js"},
+  "files": ["src", "README.md", "LICENSE"],
+  "keywords": [
+    "background-removal", "cutout", "transparent", "png",
+    "illustration", "flat-design", "image-generation",
+    "midjourney", "dall-e", "stable-diffusion", "wanxiang"
+  ],
+  "license": "MIT",
+  "engines": {"node": ">=18"},
+  "peerDependencies": {"sharp": ">=0.33"},
+  "scripts": {"test": "node test/run.js"}
+}
